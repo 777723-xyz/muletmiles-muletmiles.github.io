@@ -1,23 +1,15 @@
-/*Edits that Miles Mulet makes (for this website created for CEN3031)
-will be marked by !!!EBM!!! (edited by Miles)*/
-
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
 
 body {
-  /*padding-bottom: 40px;*/   /*!!!EBM!!! I didn't want this padding due to the footer that I was using, so I commented this line out */
+  padding-bottom: 40px;
   color: #5a5a5a;
-  background-color: #dddddd; /*!!!EBM!!! I added this background color as I personally thought it looked a bit
-                                          better (and to show that I know how to do this)*/
 }
 
 
-/*!!!EBM!!! I left most items below untouched as I liked the defaults given by bootstrap. */
-
 /* CUSTOMIZE THE NAVBAR
--------------------------------------------------- 
-*/
+-------------------------------------------------- */
 
 /* Special class on .container surrounding .navbar, used for positioning it into place. */
 .navbar-wrapper {
@@ -43,8 +35,7 @@ body {
 
 
 /* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- 
-*/
+-------------------------------------------------- */
 
 /* Carousel base class */
 .carousel {
@@ -85,6 +76,7 @@ body {
   margin-right: 10px;
   margin-left: 10px;
 }
+
 
 /* Featurettes
 ------------------------- */
@@ -139,17 +131,4 @@ body {
   .featurette-heading {
     margin-top: 120px;
   }
-}
-
-/*!!!EBM!!! I added the below code for a footer. The design is based on bootstrap's 'sticky footer,' but I
-              didn't set the position attribute to be absolute, as I only wanted the footer to be visible
-              at the end of the page
-*/
-
-.footer{
-  bottom: 0;    /*This places the footer at the bottom of the page*/
-  width: 100%;  /*This extends the footer across the entire page*/
-  /* Set the fixed height of the footer here */
-  height: 40px;
-  background-color: #333333;
 }
