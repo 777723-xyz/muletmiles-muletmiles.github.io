@@ -1,8 +1,8 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="muletmiles.github.io" resolutions="1x" timestamp="1452320832822">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="muletmiles.github.io" resolutions="1x" timestamp="1452554767404">
   <folder name="css">
     <file name="site_global.css" crc="4052507572"/>
-    <file name="index.css" crc="125936759" ref="index"/>
-    <file name="iefonts_index.css" crc="28643199" ref="index"/>
+    <file name="index.css" crc="6232674" ref="index"/>
+    <file name="iefonts_index.css" crc="4098453097" ref="index"/>
   </folder>
   <folder name="assets">
     <file name="smoothscroll.js" crc="4157752039" seo="true" mt="1452320282000"/>
@@ -23,16 +23,10 @@
     <file name="pie.js" crc="3827607177" ref="index"/>
     <file name="jquery.musemenu.js" crc="4042164668" ref="index"/>
     <file name="jquery.musepolyfill.bgsize.js" crc="185257658" ref="index"/>
-    <file name="form_check.php" crc="3932029206" ref="index"/>
-    <file name="form_throttle.php" crc="314685628" ref="index"/>
-    <file name="form_process.php" crc="401030677" ref="index"/>
     <file name="html5shiv.js" crc="4241844378" ref="index"/>
     <file name="jquery.scrolleffects.js" crc="206645848" ref="index"/>
-    <file name="form-u21484.php" crc="4218715108" ref="index"/>
   </folder>
   <folder name="images">
-    <file name="blank.gif" crc="4208392903" ref="index"/>
-    <file name="loading.gif" crc="3815509949" ref="index"/>
     <file name="about_bg.jpg" crc="335141631" ref="index"/>
     <file name="services_bg.jpg" crc="4069859873" ref="index"/>
     <file name="services-icn-01.png" crc="3993639200" seo="true" ref="index"/>
@@ -43,9 +37,6 @@
     <file name="services-icn-06.png" crc="3802786967" seo="true" ref="index"/>
     <file name="divider_bg.jpg" crc="450862287" ref="index"/>
     <file name="arrow_up.png" crc="4020488955" seo="true" ref="index"/>
-    <file name="folio01a.jpg" crc="3854628363" ref="index"/>
-    <file name="folio01b.jpg" crc="4070541694" seo="true" ref="index"/>
-    <file name="folio01c.jpg" crc="225692312" seo="true" ref="index"/>
     <file name="logo2.png" crc="4187260153" seo="true" ref="index"/>
     <file name="top_scl_icn_fb.png" crc="4163445723" seo="true" ref="index"/>
     <file name="top_scl_icn_gp.png" crc="34897585" seo="true" ref="index"/>
@@ -53,15 +44,9 @@
     <file name="top_scl_icn_tw.png" crc="3840287370" seo="true" ref="index"/>
     <file name="u13469-grad.png" crc="340914322" ref="index"/>
     <file name="u15086-grad.png" crc="205950515" ref="index"/>
-    <file name="folio01a-ieu18415-fr.png" crc="435387763" ref="index"/>
-    <file name="img_20160108_233251944.jpg" crc="4075257178" seo="true" ref="index"/>
-    <file name="expand.png" crc="234042916" ref="index"/>
     <file name="yeah.jpg" crc="3853493890" ref="index"/>
     <file name="animation1.gif" crc="248015699" seo="true" ref="index"/>
-    <file name="u21487-17.png" crc="285186422" ref="index"/>
-    <file name="u21487-17-r.png" crc="4087992396" ref="index"/>
-    <file name="u21487-17-m.png" crc="4087992396" ref="index"/>
-    <file name="u21487-17-fs.png" crc="285186422" ref="index"/>
+    <file name="img_20160108_233250121.jpg" crc="4136950127" ref="index"/>
   </folder>
-  <file name="index.html" crc="356222293" seo="true" mt="1452320764399" redirect="true"/>
+  <file name="index.html" crc="4007113209" seo="true" mt="1452554760341" redirect="true"/>
 </manifest>
