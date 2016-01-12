@@ -1,17 +1,17 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="muletmiles.github.io" resolutions="1x" timestamp="1452558657738">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="muletmiles.github.io" resolutions="1x" timestamp="1452559183654">
   <folder name="tablet">
     <folder name="css">
       <file name="index.css" crc="3826060370" ref="tablet>index"/>
       <file name="iefonts_index.css" crc="189825249" ref="tablet>index"/>
     </folder>
-    <file name="index.html" crc="3854703800" seo="true" mt="1452556695166" redirect="true"/>
+    <file name="index.html" crc="3854703800" seo="true" mt="1452559170175" redirect="true"/>
   </folder>
   <folder name="phone">
     <folder name="css">
       <file name="index.css" crc="144862245" ref="phone>index"/>
       <file name="iefonts_index.css" crc="45726189" ref="phone>index"/>
     </folder>
-    <file name="index.html" crc="39624706" seo="true" mt="1452557071756" redirect="true"/>
+    <file name="index.html" crc="39624706" seo="true" mt="1452559170042" redirect="true"/>
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="4052507572"/>
@@ -62,19 +62,19 @@
     <file name="yeah.jpg" crc="3853493890" ref="index:phone>index:tablet>index"/>
     <file name="animation1.gif" crc="248015699" seo="true" ref="index:phone>index:tablet>index"/>
     <file name="img_20160108_233250121.jpg" crc="4136950127" ref="index:phone>index:tablet>index"/>
-    <file name="home_slide01.jpg" crc="515120235" seo="true" ref="phone>index"/>
+    <file name="home_slide01.jpg" crc="448806463" seo="true" ref="phone>index"/>
     <file name="blank.gif" crc="4208392903" ref="phone>index"/>
-    <file name="home_slide02.jpg" crc="3980643883" seo="true" ref="phone>index"/>
-    <file name="home_slide03.jpg" crc="4101798839" seo="true" ref="phone>index"/>
-    <file name="home_slide04.jpg" crc="421980972" seo="true" ref="phone>index"/>
+    <file name="home_slide02.jpg" crc="4024707154" seo="true" ref="phone>index"/>
+    <file name="home_slide03.jpg" crc="4144246012" seo="true" ref="phone>index"/>
+    <file name="home_slide04.jpg" crc="390698339" seo="true" ref="phone>index"/>
     <file name="loading.gif" crc="3815509949" ref="phone>index"/>
     <file name="icon_close.png" crc="4191264615" seo="true" ref="phone>index"/>
     <file name="u23421-grad.png" crc="427318787" ref="tablet>index"/>
-    <file name="services-icn-042.png" crc="4249022926" seo="true" ref="tablet>index"/>
-    <file name="services-icn-022.png" crc="467894340" seo="true" ref="tablet>index"/>
-    <file name="services-icn-032.png" crc="121048690" seo="true" ref="tablet>index"/>
-    <file name="services-icn-062.png" crc="437948826" seo="true" ref="tablet>index"/>
-    <file name="services-icn-052.png" crc="4047496744" seo="true" ref="tablet>index"/>
+    <file name="services-icn-042.png" crc="4238608474" seo="true" ref="tablet>index"/>
+    <file name="services-icn-022.png" crc="387490314" seo="true" ref="tablet>index"/>
+    <file name="services-icn-032.png" crc="3983398721" seo="true" ref="tablet>index"/>
+    <file name="services-icn-062.png" crc="3802786967" seo="true" ref="tablet>index"/>
+    <file name="services-icn-052.png" crc="25058406" seo="true" ref="tablet>index"/>
     <file name="seamlessstripes_img-u700-fr.png" crc="4199648129" ref="index"/>
   </folder>
   <file name="index.html" crc="3967520117" seo="true" mt="1452558530681" redirect="true"/>
