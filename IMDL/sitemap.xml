@@ -115,9 +115,71 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://muletmiles.github.io/images/home_slide01.jpg</loc>
+    <lastmod>2016-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://muletmiles.github.io/images/home_slide02.jpg</loc>
+    <lastmod>2016-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://muletmiles.github.io/images/home_slide03.jpg</loc>
+    <lastmod>2016-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://muletmiles.github.io/images/home_slide04.jpg</loc>
+    <lastmod>2016-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://muletmiles.github.io/images/icon_close.png</loc>
+    <lastmod>2016-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://muletmiles.github.io/images/services-icn-042.png</loc>
+    <lastmod>2016-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://muletmiles.github.io/images/services-icn-022.png</loc>
+    <lastmod>2016-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://muletmiles.github.io/images/services-icn-032.png</loc>
+    <lastmod>2016-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://muletmiles.github.io/images/services-icn-062.png</loc>
+    <lastmod>2016-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://muletmiles.github.io/images/services-icn-052.png</loc>
+    <lastmod>2016-01-11</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://muletmiles.github.io/index.html</loc>
     <lastmod>2016-01-11</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link rel="alternate" media="only screen and (max-device-width: 370px)" href="http://muletmiles.github.io/phone/index.html"/>
+    <xhtml:link rel="alternate" media="only screen and (max-device-width: 960px)" href="http://muletmiles.github.io/tablet/index.html"/>
   </url>
 </urlset>

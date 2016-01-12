@@ -1,7 +1,21 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="muletmiles.github.io" resolutions="1x" timestamp="1452554767404">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="muletmiles.github.io" resolutions="1x" timestamp="1452558657738">
+  <folder name="tablet">
+    <folder name="css">
+      <file name="index.css" crc="3826060370" ref="tablet>index"/>
+      <file name="iefonts_index.css" crc="189825249" ref="tablet>index"/>
+    </folder>
+    <file name="index.html" crc="3854703800" seo="true" mt="1452556695166" redirect="true"/>
+  </folder>
+  <folder name="phone">
+    <folder name="css">
+      <file name="index.css" crc="144862245" ref="phone>index"/>
+      <file name="iefonts_index.css" crc="45726189" ref="phone>index"/>
+    </folder>
+    <file name="index.html" crc="39624706" seo="true" mt="1452557071756" redirect="true"/>
+  </folder>
   <folder name="css">
     <file name="site_global.css" crc="4052507572"/>
-    <file name="index.css" crc="6232674" ref="index"/>
+    <file name="index.css" crc="4270536877" ref="index"/>
     <file name="iefonts_index.css" crc="4098453097" ref="index"/>
   </folder>
   <folder name="assets">
@@ -13,40 +27,55 @@
     <file name="favicon.ico" crc="443686880" seo="true" mt="1452319138000"/>
   </folder>
   <folder name="scripts">
-    <file name="jquery-1.8.3.min.js" crc="196614522" ref="index"/>
-    <file name="museutils.js" crc="275725342" ref="index"/>
-    <file name="webpro.js" crc="3883484123" ref="index"/>
-    <file name="musewpslideshow.js" crc="360574455" ref="index"/>
-    <file name="jquery.museoverlay.js" crc="342093292" ref="index"/>
-    <file name="touchswipe.js" crc="4218319045" ref="index"/>
-    <file name="jquery.watch.js" crc="3999102769" ref="index"/>
-    <file name="pie.js" crc="3827607177" ref="index"/>
-    <file name="jquery.musemenu.js" crc="4042164668" ref="index"/>
-    <file name="jquery.musepolyfill.bgsize.js" crc="185257658" ref="index"/>
-    <file name="html5shiv.js" crc="4241844378" ref="index"/>
+    <file name="jquery-1.8.3.min.js" crc="196614522" ref="index:phone>index:tablet>index"/>
+    <file name="museutils.js" crc="275725342" ref="index:phone>index:tablet>index"/>
+    <file name="webpro.js" crc="3883484123" ref="index:phone>index:tablet>index"/>
+    <file name="musewpslideshow.js" crc="360574455" ref="index:phone>index:tablet>index"/>
+    <file name="jquery.museoverlay.js" crc="342093292" ref="index:phone>index:tablet>index"/>
+    <file name="touchswipe.js" crc="4218319045" ref="index:phone>index:tablet>index"/>
+    <file name="jquery.watch.js" crc="3999102769" ref="index:phone>index:tablet>index"/>
+    <file name="pie.js" crc="3827607177" ref="index:phone>index:tablet>index"/>
+    <file name="jquery.musemenu.js" crc="4042164668" ref="index:phone>index:tablet>index"/>
+    <file name="jquery.musepolyfill.bgsize.js" crc="185257658" ref="index:phone>index:tablet>index"/>
+    <file name="html5shiv.js" crc="4241844378" ref="index:phone>index:tablet>index"/>
     <file name="jquery.scrolleffects.js" crc="206645848" ref="index"/>
+    <file name="museredirect.js" crc="3899419633" ref="tablet>index:index"/>
   </folder>
   <folder name="images">
-    <file name="about_bg.jpg" crc="335141631" ref="index"/>
-    <file name="services_bg.jpg" crc="4069859873" ref="index"/>
-    <file name="services-icn-01.png" crc="3993639200" seo="true" ref="index"/>
-    <file name="services-icn-02.png" crc="387490314" seo="true" ref="index"/>
-    <file name="services-icn-03.png" crc="3983398721" seo="true" ref="index"/>
-    <file name="services-icn-04.png" crc="4238608474" seo="true" ref="index"/>
-    <file name="services-icn-05.png" crc="25058406" seo="true" ref="index"/>
-    <file name="services-icn-06.png" crc="3802786967" seo="true" ref="index"/>
+    <file name="about_bg.jpg" crc="335141631" ref="phone>index:tablet>index:index"/>
+    <file name="services_bg.jpg" crc="4069859873" ref="phone>index:tablet>index:index"/>
+    <file name="services-icn-01.png" crc="3993639200" seo="true" ref="phone>index:tablet>index:index"/>
+    <file name="services-icn-02.png" crc="387490314" seo="true" ref="phone>index:index"/>
+    <file name="services-icn-03.png" crc="3983398721" seo="true" ref="phone>index:index"/>
+    <file name="services-icn-04.png" crc="4238608474" seo="true" ref="phone>index:index"/>
+    <file name="services-icn-05.png" crc="25058406" seo="true" ref="phone>index:index"/>
+    <file name="services-icn-06.png" crc="3802786967" seo="true" ref="phone>index:index"/>
     <file name="divider_bg.jpg" crc="450862287" ref="index"/>
-    <file name="arrow_up.png" crc="4020488955" seo="true" ref="index"/>
-    <file name="logo2.png" crc="4187260153" seo="true" ref="index"/>
+    <file name="arrow_up.png" crc="4020488955" seo="true" ref="phone>index:tablet>index:index"/>
+    <file name="logo2.png" crc="4187260153" seo="true" ref="index:phone>index:tablet>index"/>
     <file name="top_scl_icn_fb.png" crc="4163445723" seo="true" ref="index"/>
     <file name="top_scl_icn_gp.png" crc="34897585" seo="true" ref="index"/>
     <file name="top_scl_icn_ln.png" crc="3826927679" seo="true" ref="index"/>
     <file name="top_scl_icn_tw.png" crc="3840287370" seo="true" ref="index"/>
     <file name="u13469-grad.png" crc="340914322" ref="index"/>
     <file name="u15086-grad.png" crc="205950515" ref="index"/>
-    <file name="yeah.jpg" crc="3853493890" ref="index"/>
-    <file name="animation1.gif" crc="248015699" seo="true" ref="index"/>
-    <file name="img_20160108_233250121.jpg" crc="4136950127" ref="index"/>
+    <file name="yeah.jpg" crc="3853493890" ref="index:phone>index:tablet>index"/>
+    <file name="animation1.gif" crc="248015699" seo="true" ref="index:phone>index:tablet>index"/>
+    <file name="img_20160108_233250121.jpg" crc="4136950127" ref="index:phone>index:tablet>index"/>
+    <file name="home_slide01.jpg" crc="515120235" seo="true" ref="phone>index"/>
+    <file name="blank.gif" crc="4208392903" ref="phone>index"/>
+    <file name="home_slide02.jpg" crc="3980643883" seo="true" ref="phone>index"/>
+    <file name="home_slide03.jpg" crc="4101798839" seo="true" ref="phone>index"/>
+    <file name="home_slide04.jpg" crc="421980972" seo="true" ref="phone>index"/>
+    <file name="loading.gif" crc="3815509949" ref="phone>index"/>
+    <file name="icon_close.png" crc="4191264615" seo="true" ref="phone>index"/>
+    <file name="u23421-grad.png" crc="427318787" ref="tablet>index"/>
+    <file name="services-icn-042.png" crc="4249022926" seo="true" ref="tablet>index"/>
+    <file name="services-icn-022.png" crc="467894340" seo="true" ref="tablet>index"/>
+    <file name="services-icn-032.png" crc="121048690" seo="true" ref="tablet>index"/>
+    <file name="services-icn-062.png" crc="437948826" seo="true" ref="tablet>index"/>
+    <file name="services-icn-052.png" crc="4047496744" seo="true" ref="tablet>index"/>
+    <file name="seamlessstripes_img-u700-fr.png" crc="4199648129" ref="index"/>
   </folder>
-  <file name="index.html" crc="4007113209" seo="true" mt="1452554760341" redirect="true"/>
+  <file name="index.html" crc="3967520117" seo="true" mt="1452558530681" redirect="true"/>
 </manifest>
