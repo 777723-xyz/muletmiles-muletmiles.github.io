@@ -1,22 +1,22 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="muletmiles.github.io" resolutions="1x" timestamp="1452560039265">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="muletmiles.github.io" resolutions="1x" timestamp="1452811323261">
   <folder name="tablet">
     <folder name="css">
-      <file name="index.css" crc="3806237314" ref="tablet>index"/>
-      <file name="iefonts_index.css" crc="189825249" ref="tablet>index"/>
+      <file name="index.css" crc="421625310" ref="tablet>index"/>
+      <file name="iefonts_index.css" crc="3797753537" ref="tablet>index"/>
     </folder>
-    <file name="index.html" crc="3897842166" seo="true" mt="1452559984048" redirect="true"/>
+    <file name="index.html" crc="247474292" seo="true" mt="1452811246969" redirect="true"/>
   </folder>
   <folder name="phone">
     <folder name="css">
-      <file name="index.css" crc="3824119209" ref="phone>index"/>
-      <file name="iefonts_index.css" crc="45726189" ref="phone>index"/>
+      <file name="index.css" crc="4000881716" ref="phone>index"/>
+      <file name="iefonts_index.css" crc="4183320768" ref="phone>index"/>
     </folder>
-    <file name="index.html" crc="372679065" seo="true" mt="1452560031429" redirect="true"/>
+    <file name="index.html" crc="3955538914" seo="true" mt="1452811312826" redirect="true"/>
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="4052507572"/>
-    <file name="index.css" crc="465039157" ref="index"/>
-    <file name="iefonts_index.css" crc="4098453097" ref="index"/>
+    <file name="index.css" crc="4078995520" ref="index"/>
+    <file name="iefonts_index.css" crc="3835967886" ref="index"/>
   </folder>
   <folder name="assets">
     <file name="smoothscroll.js" crc="4157752039" seo="true" mt="1452320282000"/>
@@ -76,6 +76,7 @@
     <file name="services-icn-062.png" crc="3802786967" seo="true" ref="tablet>index:index"/>
     <file name="services-icn-052.png" crc="25058406" seo="true" ref="tablet>index:index"/>
     <file name="seamlessstripes_img-u700-fr.png" crc="4199648129" ref="index"/>
+    <file name="capture.jpg" crc="3842493479" ref="phone>index:tablet>index:index"/>
   </folder>
-  <file name="index.html" crc="4161826131" seo="true" mt="1452559993271" redirect="true"/>
+  <file name="index.html" crc="266104763" seo="true" mt="1452811180721" redirect="true"/>
 </manifest>
