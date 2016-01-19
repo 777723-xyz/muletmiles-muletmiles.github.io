@@ -1,22 +1,22 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="muletmiles.github.io" resolutions="1x" timestamp="1452811665871">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="muletmiles.github.io" resolutions="1x" timestamp="1453207124304">
   <folder name="tablet">
     <folder name="css">
-      <file name="index.css" crc="421625310" ref="tablet>index"/>
-      <file name="iefonts_index.css" crc="3797753537" ref="tablet>index"/>
+      <file name="index.css" crc="3824017624" ref="tablet>index"/>
+      <file name="iefonts_index.css" crc="13664482" ref="tablet>index"/>
     </folder>
-    <file name="index.html" crc="524194191" seo="true" mt="1452811650547" redirect="true"/>
+    <file name="index.html" crc="362839863" seo="true" mt="1453207121419" redirect="true"/>
   </folder>
   <folder name="phone">
     <folder name="css">
-      <file name="index.css" crc="4000881716" ref="phone>index"/>
-      <file name="iefonts_index.css" crc="4183320768" ref="phone>index"/>
+      <file name="index.css" crc="4277549336" ref="phone>index"/>
+      <file name="iefonts_index.css" crc="4223375255" ref="phone>index"/>
     </folder>
-    <file name="index.html" crc="173194039" seo="true" mt="1452811636412" redirect="true"/>
+    <file name="index.html" crc="4086960768" seo="true" mt="1453207121418" redirect="true"/>
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="4052507572"/>
-    <file name="index.css" crc="4078995520" ref="index"/>
-    <file name="iefonts_index.css" crc="3835967886" ref="index"/>
+    <file name="index.css" crc="365869694" ref="index"/>
+    <file name="iefonts_index.css" crc="3867180342" ref="index"/>
   </folder>
   <folder name="assets">
     <file name="smoothscroll.js" crc="4157752039" seo="true" mt="1452320282000"/>
@@ -61,7 +61,7 @@
     <file name="u15086-grad.png" crc="205950515" ref="index"/>
     <file name="yeah.jpg" crc="3853493890" ref="index:phone>index:tablet>index"/>
     <file name="animation1.gif" crc="248015699" seo="true" ref="index:phone>index:tablet>index"/>
-    <file name="img_20160108_233250121.jpg" crc="4136950127" ref="index:phone>index:tablet>index"/>
+    <file name="img_20160108_233250121.jpg" crc="112176005" ref="index:phone>index:tablet>index"/>
     <file name="home_slide01.jpg" crc="448806463" seo="true" ref="phone>index"/>
     <file name="blank.gif" crc="4208392903" ref="phone>index"/>
     <file name="home_slide02.jpg" crc="4024707154" seo="true" ref="phone>index"/>
@@ -78,5 +78,5 @@
     <file name="seamlessstripes_img-u700-fr.png" crc="4199648129" ref="index"/>
     <file name="capture.jpg" crc="3842493479" ref="phone>index:tablet>index:index"/>
   </folder>
-  <file name="index.html" crc="4172467521" seo="true" mt="1452811610301" redirect="true"/>
+  <file name="index.html" crc="247296144" seo="true" mt="1453207121417" redirect="true"/>
 </manifest>
