@@ -1,7 +1,7 @@
 .version.index /* version checker */
 {
-	color: #0000E3;
-	background-color: #EDE0D8;
+	color: #0000FC;
+	background-color: #3F1F48;
 }
 
 @-ms-viewport
@@ -76,7 +76,7 @@
 
 #u24650-3
 {
-	z-index: 184;
+	z-index: 198;
 	width: 768px;
 	min-height: 80px;
 	background-color: #191919;
@@ -92,10 +92,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 85px;
 	line-height: 85px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: bebas-neue, sans-serif;
 	font-weight: 400;
 	margin-left: 63px;
@@ -118,10 +118,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 10px;
 	font-size: 14px;
 	line-height: 14px;
-	letter-spacing: 10px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 300;
 	position: relative;
@@ -132,7 +132,7 @@
 
 #buttonu24294
 {
-	z-index: 187;
+	z-index: 201;
 	min-height: 70px;
 	padding-bottom: 10px;
 }
@@ -145,7 +145,7 @@
 
 #u24338
 {
-	z-index: 219;
+	z-index: 233;
 	width: 135px;
 	background-color: transparent;
 	position: relative;
@@ -168,7 +168,7 @@
 
 #menuu24295
 {
-	z-index: 188;
+	z-index: 202;
 	width: 553px;
 	border-style: none;
 	border-color: transparent;
@@ -220,10 +220,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 13px;
 	line-height: 16px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 600;
 	position: relative;
@@ -285,10 +285,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 13px;
 	line-height: 16px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 600;
 	position: relative;
@@ -341,10 +341,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 13px;
 	line-height: 16px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 600;
 	position: relative;
@@ -397,10 +397,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 13px;
 	line-height: 16px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 600;
 	position: relative;
@@ -453,10 +453,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 13px;
 	line-height: 16px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 600;
 	position: relative;
@@ -482,7 +482,7 @@
 
 #buttonu24294-bw
 {
-	z-index: 187;
+	z-index: 201;
 	min-height: 70px;
 }
 
@@ -525,10 +525,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 60px;
 	line-height: 60px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: bebas-neue, sans-serif;
 	font-weight: 400;
 	margin-left: 61px;
@@ -601,10 +601,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 60px;
 	line-height: 60px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: bebas-neue, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -668,10 +668,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 15px;
 	line-height: 15px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 500;
 	margin-left: 50px;
@@ -752,10 +752,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 15px;
 	line-height: 15px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 500;
 	margin-left: 50px;
@@ -836,10 +836,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 15px;
 	line-height: 15px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 500;
 	margin-left: 50px;
@@ -920,10 +920,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 15px;
 	line-height: 15px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 500;
 	margin-left: 50px;
@@ -1004,10 +1004,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 15px;
 	line-height: 15px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 500;
 	margin-left: 50px;
@@ -1096,10 +1096,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 15px;
 	line-height: 15px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 500;
 	margin-left: 50px;
@@ -1125,18 +1125,6 @@
 	position: relative;
 }
 
-#u27273-3
-{
-	z-index: 7;
-	width: 768px;
-	min-height: 1350px;
-	border-style: none;
-	border-color: transparent;
-	background-color: #DEDEDE;
-	position: relative;
-	margin-right: -10000px;
-}
-
 #u23528-4
 {
 	z-index: 39;
@@ -1146,16 +1134,15 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #191919;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 60px;
 	line-height: 60px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: bebas-neue, sans-serif;
 	font-weight: 400;
+	margin-left: 209px;
+	margin-top: 102px;
 	position: relative;
-	margin-right: -10000px;
-	margin-top: 120px;
-	left: 209px;
 }
 
 #pamphletu23597
@@ -1164,10 +1151,9 @@
 	width: 0.01px;
 	height: 28px;
 	padding-bottom: 949px;
+	margin-left: 54px;
+	margin-top: 48px;
 	position: relative;
-	margin-right: -10000px;
-	margin-top: 228px;
-	left: 54px;
 }
 
 #u23602
@@ -1266,10 +1252,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #191919;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 13px;
 	line-height: 13px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 600;
 	position: relative;
@@ -1339,10 +1325,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #191919;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 13px;
 	line-height: 13px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 600;
 	margin-left: 86px;
@@ -1391,15 +1377,6 @@
 	margin: 0px -10000px 0px 0px;
 }
 
-#buttonu24652.ButtonSelected #u24653,#buttonu27388.ButtonSelected #u27389,#buttonu27407.ButtonSelected #u27408
-{
-	border-radius: 0px;
-	width: 378px;
-	height: 208px;
-	min-height: 0px;
-	margin: 0px -10000px 0px 0px;
-}
-
 #u27409-6
 {
 	z-index: 158;
@@ -1422,10 +1399,10 @@
 	width: 220px;
 	min-height: 14px;
 	color: #191919;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 13px;
 	line-height: 13px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 600;
 	margin-left: 80px;
@@ -1440,10 +1417,90 @@
 	background-color: transparent;
 }
 
-#u24269
+#u27432
 {
 	z-index: 164;
-	width: 180px;
+	width: 380px;
+	height: 293px;
+	border-style: none;
+	border-color: transparent;
+	background-color: transparent;
+	margin-right: -10000px;
+	position: relative;
+	padding: 12px 146px 594px 147px;
+}
+
+#buttonu27447
+{
+	z-index: 171;
+	width: 380px;
+	padding-bottom: 1px;
+	left: -1px;
+	position: relative;
+	background: transparent url("../../images/capture2.jpg") no-repeat left top;
+	background-size: cover;
+}
+
+#buttonu27447.ButtonSelected
+{
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 380px;
+	min-height: 0px;
+	margin: 0px;
+	background-size: cover;
+}
+
+#u27448
+{
+	z-index: 172;
+	width: 378px;
+	height: 208px;
+	border-width: 1px;
+	border-style: solid;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#buttonu27447:hover #u27448
+{
+	border-radius: 30px;
+	width: 378px;
+	height: 208px;
+	min-height: 0px;
+	margin: 0px -10000px 0px 0px;
+}
+
+#buttonu24652.ButtonSelected #u24653,#buttonu27388.ButtonSelected #u27389,#buttonu27407.ButtonSelected #u27408,#buttonu27447.ButtonSelected #u27448
+{
+	border-radius: 0px;
+	width: 378px;
+	height: 208px;
+	min-height: 0px;
+	margin: 0px -10000px 0px 0px;
+}
+
+#u27446-6
+{
+	z-index: 165;
+	width: 220px;
+	min-height: 14px;
+	color: #191919;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 13px;
+	line-height: 13px;
+	font-family: open-sans, sans-serif;
+	font-weight: 600;
+	margin-left: 80px;
+	margin-top: 56px;
+	position: relative;
+}
+
+#u24269
+{
+	z-index: 173;
+	width: 391px;
 	position: relative;
 	margin-right: -10000px;
 	margin-top: 8px;
@@ -1472,18 +1529,9 @@
 	margin: 0px;
 }
 
-#u24272.PamphletThumbSelected
-{
-	border-color: #191919;
-	background-color: transparent;
-	width: 199px;
-	min-height: 0px;
-	margin: 0px;
-}
-
 #u24273-4
 {
-	z-index: 166;
+	z-index: 175;
 	width: 180px;
 	min-height: 20px;
 	background-color: transparent;
@@ -1508,7 +1556,56 @@
 	margin: 7px -10000px 0px 0px;
 }
 
-#u24272.PamphletThumbSelected #u24273-4
+#u27444
+{
+	position: absolute;
+	width: 199px;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #191919;
+	background-color: #191919;
+	padding-bottom: 6px;
+	top: -7px;
+	left: 201px;
+}
+
+#u27444:hover
+{
+	border-color: #4C4C4C;
+	background-color: #4C4C4C;
+	width: 199px;
+	min-height: 0px;
+	margin: 0px;
+}
+
+#u24272.PamphletThumbSelected,#u27444.PamphletThumbSelected
+{
+	border-color: #191919;
+	background-color: transparent;
+	width: 199px;
+	min-height: 0px;
+	margin: 0px;
+}
+
+#u27450-4
+{
+	z-index: 180;
+	width: 180px;
+	min-height: 20px;
+	background-color: transparent;
+	color: #FFFFFF;
+	text-align: center;
+	line-height: 20px;
+	letter-spacing: 2px;
+	font-family: raleway, sans-serif;
+	font-weight: 500;
+	position: relative;
+	margin-right: -10000px;
+	margin-top: 7px;
+	left: 10px;
+}
+
+#u24272.PamphletThumbSelected #u24273-4,#u27444:hover #u27450-4
 {
 	padding-top: 0px;
 	padding-bottom: 0px;
@@ -1517,7 +1614,16 @@
 	margin: 7px -10000px 0px 0px;
 }
 
-#u24272.PamphletThumbSelected #u24273-4 p
+#u27444.PamphletThumbSelected #u27450-4
+{
+	padding-top: 0px;
+	padding-bottom: 0px;
+	min-height: 20px;
+	width: 180px;
+	margin: 7px -10000px 0px 0px;
+}
+
+#u24272.PamphletThumbSelected #u24273-4 p,#u27444.PamphletThumbSelected #u27450-4 p
 {
 	color: #191919;
 	visibility: inherit;
@@ -1528,7 +1634,20 @@
 	cursor: pointer;
 }
 
-#pu23378,#pu23372,#pu23375,#pu27273-3,#pu23374
+#u27273-3
+{
+	z-index: 7;
+	width: 768px;
+	min-height: 1350px;
+	border-style: none;
+	border-color: transparent;
+	background-color: #DEDEDE;
+	top: -925px;
+	margin-bottom: -925px;
+	position: relative;
+}
+
+#pu23378,#pu23372,#pu23375,#pu23374
 {
 	width: 0.01px;
 }
@@ -1552,10 +1671,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 60px;
 	line-height: 60px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: bebas-neue, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -1563,7 +1682,7 @@
 
 #buttonu24654
 {
-	z-index: 227;
+	z-index: 241;
 	width: 260px;
 	border-radius: 0px;
 	margin-left: 61px;
@@ -1580,7 +1699,7 @@
 
 #u24655
 {
-	z-index: 228;
+	z-index: 242;
 	width: 260px;
 	border-style: none;
 	border-color: transparent;
@@ -1591,7 +1710,7 @@
 
 #pamphletu24656
 {
-	z-index: 229;
+	z-index: 243;
 	width: 0.01px;
 	height: 320px;
 	padding-bottom: 14px;
@@ -1601,7 +1720,7 @@
 
 #u24659
 {
-	z-index: 230;
+	z-index: 244;
 	width: 260px;
 	position: relative;
 	margin-right: -10000px;
@@ -1638,12 +1757,12 @@
 
 #u24665popup
 {
-	z-index: 232;
+	z-index: 246;
 }
 
 #u24666
 {
-	z-index: 233;
+	z-index: 247;
 	width: 260px;
 	height: 334px;
 	border-style: none;
@@ -1658,7 +1777,7 @@
 
 #u24675-18
 {
-	z-index: 234;
+	z-index: 248;
 	width: 220px;
 	min-height: 177px;
 	border-style: none;
@@ -1702,7 +1821,7 @@
 
 #u24674
 {
-	z-index: 252;
+	z-index: 266;
 	width: 80px;
 	height: 1px;
 	border-style: none;
@@ -1719,7 +1838,7 @@
 
 #u24667-11
 {
-	z-index: 253;
+	z-index: 267;
 	width: 220px;
 	min-height: 133px;
 	border-style: none;
@@ -1755,14 +1874,14 @@
 
 #u24669
 {
-	z-index: 262;
+	z-index: 276;
 	width: 32px;
 	background-color: transparent;
 }
 
 #u24672
 {
-	z-index: 267;
+	z-index: 281;
 	width: 32px;
 	background-color: transparent;
 }
@@ -1774,17 +1893,17 @@
 
 #u24676-4
 {
-	z-index: 270;
+	z-index: 284;
 	width: 220px;
 	min-height: 15px;
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 3px;
 	font-size: 15px;
 	line-height: 15px;
-	letter-spacing: 3px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 700;
 	margin-left: 81px;
@@ -1794,7 +1913,7 @@
 
 #u24678
 {
-	z-index: 278;
+	z-index: 292;
 	width: 50px;
 	height: 1px;
 	border-style: none;
@@ -1807,17 +1926,17 @@
 
 #u24677-4
 {
-	z-index: 274;
+	z-index: 288;
 	width: 220px;
 	min-height: 14px;
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 13px;
 	line-height: 13px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	margin-left: 81px;
@@ -1831,14 +1950,14 @@
 	min-height: 502px;
 }
 
-#home,#about,#services,#portfolio,#team
+#home,#about,#services,#team
 {
 	position: relative;
 	width: 22px;
 	margin-right: -10000px;
 }
 
-#contact
+#portfolio,#contact
 {
 	position: relative;
 }
@@ -1852,10 +1971,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #191919;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 60px;
 	line-height: 60px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: bebas-neue, sans-serif;
 	font-weight: 400;
 	margin-left: 209px;
@@ -1865,13 +1984,13 @@
 
 #u24683-4
 {
-	z-index: 279;
+	z-index: 293;
 	width: 480px;
 	min-height: 80px;
-	color: #000000;
 	font-size: 52px;
 	text-align: left;
 	line-height: 52px;
+	color: #000000;
 	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
 	font-style: italic;
 	margin-left: 135px;
@@ -1929,7 +2048,7 @@
 
 #u24278
 {
-	z-index: 170;
+	z-index: 184;
 	min-height: 65px;
 	border-style: none;
 	border-color: transparent;
@@ -1939,7 +2058,7 @@
 
 #u24281
 {
-	z-index: 176;
+	z-index: 190;
 	width: 45px;
 	min-height: 45px;
 	border-style: none;
@@ -1958,7 +2077,7 @@
 
 #u24283
 {
-	z-index: 177;
+	z-index: 191;
 	width: 45px;
 	min-height: 45px;
 	border-style: none;
@@ -1977,7 +2096,7 @@
 
 #u24285
 {
-	z-index: 178;
+	z-index: 192;
 	width: 45px;
 	min-height: 45px;
 	border-style: none;
@@ -1996,7 +2115,7 @@
 
 #u24287
 {
-	z-index: 179;
+	z-index: 193;
 	width: 45px;
 	min-height: 45px;
 	border-style: none;
@@ -2015,7 +2134,7 @@
 
 #buttonu24289
 {
-	z-index: 180;
+	z-index: 194;
 	width: 50px;
 	border-style: none;
 	border-color: transparent;
@@ -2042,7 +2161,7 @@
 
 #u24290
 {
-	z-index: 181;
+	z-index: 195;
 	width: 50px;
 	border-style: none;
 	border-color: transparent;
@@ -2068,7 +2187,7 @@
 
 #u24291
 {
-	z-index: 182;
+	z-index: 196;
 	width: 30px;
 	border-style: none;
 	border-color: transparent;
@@ -2114,45 +2233,45 @@
 
 #u24278-bw
 {
-	z-index: 170;
+	z-index: 184;
 	min-height: 65px;
 }
 
 #u24279
 {
-	z-index: 171;
-	min-height: 35px;
+	z-index: 185;
+	min-height: 36px;
 	border-style: none;
 	border-color: transparent;
 	background-color: #191919;
-	padding-bottom: 25px;
+	padding-bottom: 24px;
 }
 
 #u24280-4
 {
-	z-index: 172;
+	z-index: 186;
 	width: 346px;
 	min-height: 11px;
 	border-style: none;
 	border-color: transparent;
 	background-color: transparent;
 	color: #CCCCCC;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 11px;
 	line-height: 11px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	position: relative;
 	margin-right: -10000px;
-	margin-top: 24px;
+	margin-top: 25px;
 	left: 211px;
 }
 
 #u24279-bw
 {
-	z-index: 171;
-	min-height: 35px;
+	z-index: 185;
+	min-height: 36px;
 	margin-top: 80px;
 }
 

@@ -1,7 +1,7 @@
 .version.index /* version checker */
 {
-	color: #0000FE;
-	background-color: #F63918;
+	color: #00000C;
+	background-color: #A23EE4;
 }
 
 @-ms-viewport
@@ -38,7 +38,7 @@
 {
 	z-index: 1;
 	width: 380px;
-	min-height: 569.7999999999884px;
+	min-height: 569.9499999999898px;
 	background-image: none;
 	border-style: none;
 	border-color: #000000;
@@ -173,10 +173,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 40px;
 	line-height: 40px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: bebas-neue, sans-serif;
 	font-weight: 400;
 	margin-left: 56px;
@@ -228,10 +228,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 40px;
 	line-height: 40px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: bebas-neue, sans-serif;
 	font-weight: 400;
 	margin-left: 28px;
@@ -291,10 +291,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 15px;
 	line-height: 15px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 500;
 	margin-left: 36px;
@@ -372,10 +372,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 15px;
 	line-height: 15px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 500;
 	margin-left: 36px;
@@ -454,10 +454,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 15px;
 	line-height: 15px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 500;
 	margin-left: 36px;
@@ -536,10 +536,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 15px;
 	line-height: 15px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 500;
 	margin-left: 36px;
@@ -618,10 +618,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 15px;
 	line-height: 15px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 500;
 	margin-left: 36px;
@@ -708,10 +708,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 15px;
 	line-height: 15px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 500;
 	margin-left: 36px;
@@ -771,10 +771,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 40px;
 	line-height: 40px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: bebas-neue, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -792,10 +792,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 10px;
 	font-size: 14px;
 	line-height: 14px;
-	letter-spacing: 10px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 300;
 	position: relative;
@@ -1473,10 +1473,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #191919;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 40px;
 	line-height: 40px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: bebas-neue, sans-serif;
 	font-weight: 400;
 	margin-left: 78px;
@@ -1594,10 +1594,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #191919;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 13px;
 	line-height: 13px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 600;
 	position: relative;
@@ -1749,10 +1749,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #191919;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 13px;
 	line-height: 13px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 600;
 	margin-left: 80px;
@@ -1801,15 +1801,6 @@
 	margin: 0px -10000px 0px 0px;
 }
 
-#buttonu27274.ButtonSelected #u27275,#buttonu27394.ButtonSelected #u27395,#buttonu27417.ButtonSelected #u27418
-{
-	border-radius: 0px;
-	width: 378px;
-	height: 208px;
-	min-height: 0px;
-	margin: 0px -10000px 0px 0px;
-}
-
 #u27419-6
 {
 	z-index: 297;
@@ -1832,10 +1823,10 @@
 	width: 220px;
 	min-height: 14px;
 	color: #191919;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 13px;
 	line-height: 13px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 600;
 	margin-left: 80px;
@@ -1848,6 +1839,73 @@
 	border-style: none;
 	border-color: #000000;
 	background-color: transparent;
+}
+
+#buttonu27454
+{
+	z-index: 309;
+	width: 380px;
+	padding-bottom: 1px;
+	margin-top: 58px;
+	position: relative;
+	background: transparent url("../../images/capture2.jpg") no-repeat left top;
+	background-size: cover;
+}
+
+#buttonu27454.ButtonSelected
+{
+	background-repeat: no-repeat;
+	background-position: left top;
+	width: 380px;
+	min-height: 0px;
+	margin: 58px 0px 0px;
+	background-size: cover;
+}
+
+#u27455
+{
+	z-index: 310;
+	width: 378px;
+	height: 208px;
+	border-width: 1px;
+	border-style: solid;
+	position: relative;
+	margin-right: -10000px;
+}
+
+#buttonu27454:hover #u27455
+{
+	border-radius: 30px;
+	width: 378px;
+	height: 208px;
+	min-height: 0px;
+	margin: 0px -10000px 0px 0px;
+}
+
+#buttonu27274.ButtonSelected #u27275,#buttonu27394.ButtonSelected #u27395,#buttonu27417.ButtonSelected #u27418,#buttonu27454.ButtonSelected #u27455
+{
+	border-radius: 0px;
+	width: 378px;
+	height: 208px;
+	min-height: 0px;
+	margin: 0px -10000px 0px 0px;
+}
+
+#u27453-6
+{
+	z-index: 303;
+	width: 220px;
+	min-height: 14px;
+	color: #191919;
+	text-align: center;
+	letter-spacing: 1px;
+	font-size: 13px;
+	line-height: 13px;
+	font-family: open-sans, sans-serif;
+	font-weight: 600;
+	margin-left: 80px;
+	margin-top: 56px;
+	position: relative;
 }
 
 #u26009
@@ -1874,10 +1932,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 40px;
 	line-height: 40px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: bebas-neue, sans-serif;
 	font-weight: 400;
 	margin-left: 69px;
@@ -2105,10 +2163,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 3px;
 	font-size: 15px;
 	line-height: 15px;
-	letter-spacing: 3px;
-	text-align: center;
 	font-family: raleway, sans-serif;
 	font-weight: 700;
 	margin-left: 99px;
@@ -2138,10 +2196,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #FFFFFF;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 13px;
 	line-height: 13px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	margin-left: 99px;
@@ -2153,7 +2211,7 @@
 {
 	z-index: 5;
 	min-height: 611.9499999999989px;
-	margin-top: 136px;
+	margin-top: 111px;
 }
 
 #team,#contact
@@ -2171,10 +2229,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #191919;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 40px;
 	line-height: 40px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: bebas-neue, sans-serif;
 	font-weight: 400;
 	margin-left: 69px;
@@ -2187,10 +2245,10 @@
 	z-index: 225;
 	width: 246px;
 	min-height: 39px;
-	color: #000000;
 	font-size: 26px;
 	text-align: left;
 	line-height: 26px;
+	color: #000000;
 	font-family: Georgia, Palatino, Palatino Linotype, Times, Times New Roman, serif;
 	font-style: italic;
 	margin-left: 86px;
@@ -2465,10 +2523,10 @@
 	border-color: transparent;
 	background-color: transparent;
 	color: #CCCCCC;
+	text-align: center;
+	letter-spacing: 1px;
 	font-size: 11px;
 	line-height: 11px;
-	letter-spacing: 1px;
-	text-align: center;
 	font-family: open-sans, sans-serif;
 	font-weight: 400;
 	position: relative;
@@ -2481,7 +2539,7 @@
 {
 	z-index: 154;
 	min-height: 31px;
-	margin-top: 116px;
+	margin-top: 115px;
 }
 
 body
