@@ -1,4 +1,4 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="muletmiles.github.io" resolutions="1x" timestamp="1453370717866">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="muletmiles.github.io" resolutions="1x" timestamp="1453813083362">
   <folder name="tablet">
     <folder name="css">
       <file name="index.css" crc="4231995208" ref="tablet>index"/>
@@ -15,8 +15,8 @@
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="4052507572"/>
-    <file name="index.css" crc="4252728478" ref="index"/>
-    <file name="iefonts_index.css" crc="22569210" ref="index"/>
+    <file name="index.css" crc="280454758" ref="index"/>
+    <file name="iefonts_index.css" crc="345633799" ref="index"/>
   </folder>
   <folder name="assets">
     <file name="smoothscroll.js" crc="4157752039" seo="true" mt="1452320282000"/>
@@ -45,11 +45,11 @@
     <file name="about_bg.jpg" crc="335141631" ref="phone>index:tablet>index:index"/>
     <file name="services_bg.jpg" crc="4069859873" ref="phone>index:tablet>index:index"/>
     <file name="services-icn-01.png" crc="3993639200" seo="true" ref="phone>index:tablet>index:index"/>
-    <file name="services-icn-02.png" crc="387490314" seo="true" ref="phone>index"/>
-    <file name="services-icn-03.png" crc="3983398721" seo="true" ref="phone>index"/>
-    <file name="services-icn-04.png" crc="4238608474" seo="true" ref="phone>index"/>
-    <file name="services-icn-05.png" crc="25058406" seo="true" ref="phone>index"/>
-    <file name="services-icn-06.png" crc="3802786967" seo="true" ref="phone>index"/>
+    <file name="services-icn-02.png" crc="387490314" seo="true" ref="phone>index:index"/>
+    <file name="services-icn-03.png" crc="3983398721" seo="true" ref="phone>index:index"/>
+    <file name="services-icn-04.png" crc="4238608474" seo="true" ref="phone>index:index"/>
+    <file name="services-icn-05.png" crc="25058406" seo="true" ref="phone>index:index"/>
+    <file name="services-icn-06.png" crc="3802786967" seo="true" ref="phone>index:index"/>
     <file name="divider_bg.jpg" crc="450862287" ref="index"/>
     <file name="arrow_up.png" crc="4020488955" seo="true" ref="phone>index:tablet>index:index"/>
     <file name="logo2.png" crc="4187260153" seo="true" ref="index:phone>index:tablet>index"/>
@@ -70,14 +70,14 @@
     <file name="loading.gif" crc="3815509949" ref="phone>index"/>
     <file name="icon_close.png" crc="4191264615" seo="true" ref="phone>index"/>
     <file name="u23421-grad.png" crc="427318787" ref="tablet>index"/>
-    <file name="services-icn-042.png" crc="4238608474" seo="true" ref="tablet>index:index"/>
-    <file name="services-icn-022.png" crc="387490314" seo="true" ref="tablet>index:index"/>
-    <file name="services-icn-032.png" crc="3983398721" seo="true" ref="tablet>index:index"/>
-    <file name="services-icn-062.png" crc="3802786967" seo="true" ref="tablet>index:index"/>
-    <file name="services-icn-052.png" crc="25058406" seo="true" ref="tablet>index:index"/>
+    <file name="services-icn-042.png" crc="4238608474" seo="true" ref="tablet>index"/>
+    <file name="services-icn-022.png" crc="387490314" seo="true" ref="tablet>index"/>
+    <file name="services-icn-032.png" crc="3983398721" seo="true" ref="tablet>index"/>
+    <file name="services-icn-062.png" crc="3802786967" seo="true" ref="tablet>index"/>
+    <file name="services-icn-052.png" crc="25058406" seo="true" ref="tablet>index"/>
     <file name="seamlessstripes_img-u700-fr.png" crc="4199648129" ref="index"/>
     <file name="capture.jpg" crc="3842493479" ref="phone>index:tablet>index:index"/>
     <file name="capture2.jpg" crc="266539093" ref="phone>index:tablet>index:index"/>
   </folder>
-  <file name="index.html" crc="3758746441" seo="true" mt="1453370526459" redirect="true"/>
+  <file name="index.html" crc="50031281" seo="true" mt="1453813076282" redirect="true"/>
 </manifest>
