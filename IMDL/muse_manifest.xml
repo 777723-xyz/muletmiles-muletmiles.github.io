@@ -1,4 +1,4 @@
-<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="muletmiles.github.io" resolutions="1x" timestamp="1454417977797">
+<manifest alg="2" build="2015.0.2.310" opt="true" iceEnabled="true" iceMarkupVersion="2" exportTarget="other" domain="muletmiles.github.io" resolutions="1x" timestamp="1456201991510">
   <folder name="tablet">
     <folder name="css">
       <file name="index.css" crc="4231995208" ref="tablet>index"/>
@@ -15,8 +15,8 @@
   </folder>
   <folder name="css">
     <file name="site_global.css" crc="4052507572"/>
-    <file name="index.css" crc="3817141603" ref="index"/>
-    <file name="iefonts_index.css" crc="100178183" ref="index"/>
+    <file name="index.css" crc="375814860" ref="index"/>
+    <file name="iefonts_index.css" crc="183364902" ref="index"/>
   </folder>
   <folder name="assets">
     <file name="smoothscroll.js" crc="4157752039" seo="true" mt="1452320282000"/>
@@ -80,5 +80,5 @@
     <file name="capture2.jpg" crc="3842493479" ref="phone>index:tablet>index:index"/>
     <file name="capture22.jpg" crc="266539093" ref="index"/>
   </folder>
-  <file name="index.html" crc="27985303" seo="true" mt="1454417968012" redirect="true"/>
+  <file name="index.html" crc="4286490523" seo="true" mt="1456201975259" redirect="true"/>
 </manifest>
