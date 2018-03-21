@@ -270,7 +270,7 @@ ImageManager.loadMenusFaces2 = function(filename) {
 // * Main Faces3
 //==============================
 ImageManager.loadMenusFaces3 = function(filename) {
-    return this.loadBitmap('img/menus/faces/faces3/', filename, 0, true);
+    return this.loadBitmap('./img/menus/faces/faces3/', filename, 0, true);
 };			
 	
 //==============================
