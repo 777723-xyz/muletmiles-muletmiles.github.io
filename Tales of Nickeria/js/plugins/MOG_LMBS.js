@@ -145,8 +145,8 @@
  *
  * Todas as imagens devem estar na pasta 
  *
- * /img/lmbs/battlers/
- * /img/lmbs/skills/
+ * /./img/lmbs/battlers/
+ * /./img/lmbs/skills/
  *
  * A nomeção deve ser feita da seguinte forma.
  *
@@ -392,21 +392,21 @@
 // * load LBSB
 //==============================
 ImageManager.loadLMBS = function(filename) {
-    return this.loadBitmap('img/lmbs/', filename, 0, true);
+    return this.loadBitmap('./img/lmbs/', filename, 0, true);
 };
 
 //==============================
 // * load LBSBatlers
 //==============================
 ImageManager.loadLMBSBattlers = function(filename) {
-    return this.loadBitmap('img/lmbs/battlers/', filename, 0, true);
+    return this.loadBitmap('./img/lmbs/battlers/', filename, 0, true);
 };
 
 //==============================
 // * load LBSSkill
 //==============================
 ImageManager.loadLMBSSkills = function(filename) {
-    return this.loadBitmap('img/lmbs/skills/', filename, 0, true);
+    return this.loadBitmap('./img/lmbs/skills/', filename, 0, true);
 };
 
 //=============================================================================
