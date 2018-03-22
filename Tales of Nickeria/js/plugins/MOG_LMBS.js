@@ -4749,7 +4749,7 @@ LmbsSpriteBattler.prototype.loadBitmaps = function() {
 		   if (this._battler._lmbs_Dash[0]) {this._PosesBitmaps[3] = ImageManager.loadLMBSBattlers(this.bname() + "(Dash)")};
 		   if (this._battler._lmbs_Jump[0]) {this._PosesBitmaps[4] = ImageManager.loadLMBSBattlers(this.bname() + "(Jump)")};
 		   if (this._battler._lmbs_Jump[0]) {this._PosesBitmaps[5] = ImageManager.loadLMBSBattlers(this.bname() + "(Fall)")};
-		   if (this._battler._lmbs_AirDash[0]) {this._PosesBitmaps[6] = ImageManager.loadLMBSBattlers(this.bname() + "(Airdash)")};
+		   if (this._battler._lmbs_AirDash[0]) {this._PosesBitmaps[6] = ImageManager.loadLMBSBattlers(this.bname() + "(AirDash)")};
 	   };
 	   if (this._battler._lmbs_Guard[0]) {this._PosesBitmaps[7] = ImageManager.loadLMBSBattlers(this.bname() + "(Guard)")};
 	   this._PosesBitmaps[8] = ImageManager.loadLMBSBattlers(this.bname() + "(Cast)");
