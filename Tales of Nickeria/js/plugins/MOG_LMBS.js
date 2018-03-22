@@ -4743,7 +4743,7 @@ LmbsSpriteBattler.prototype.loadBitmaps = function() {
    this._PosesBitmaps[0] = ImageManager.loadLMBSBattlers(this.bname());
    this._PosesBitmaps[3] = ImageManager.loadLMBSBattlers(this.bname())
    if (this.bname() != "") {
-       this._PosesBitmaps[1] = ImageManager.loadLMBSBattlers(this.bname() + "(idle)");
+       this._PosesBitmaps[1] = ImageManager.loadLMBSBattlers(String(this.bname() + "(idle)"));
 	   if (this._battler._lmbs_Movement) {
 	       this._PosesBitmaps[2] = ImageManager.loadLMBSBattlers(this.bname() + "(walk)");
 		   if (this._battler._lmbs_Dash[0]) {this._PosesBitmaps[3] = ImageManager.loadLMBSBattlers(this.bname() + "(dash)")};
