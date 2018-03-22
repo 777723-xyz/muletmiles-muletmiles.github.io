@@ -4743,19 +4743,19 @@ LmbsSpriteBattler.prototype.loadBitmaps = function() {
    this._PosesBitmaps[0] = ImageManager.loadLMBSBattlers(this.bname());
    this._PosesBitmaps[3] = ImageManager.loadLMBSBattlers(this.bname())
    if (this.bname() != "") {
-       this._PosesBitmaps[1] = ImageManager.loadLMBSBattlers(String(this.bname() + "(idle)"));
+       this._PosesBitmaps[1] = ImageManager.loadLMBSBattlers(String(this.bname() + "(Idle)"));
 	   if (this._battler._lmbs_Movement) {
-	       this._PosesBitmaps[2] = ImageManager.loadLMBSBattlers(this.bname() + "(walk)");
-		   if (this._battler._lmbs_Dash[0]) {this._PosesBitmaps[3] = ImageManager.loadLMBSBattlers(this.bname() + "(dash)")};
-		   if (this._battler._lmbs_Jump[0]) {this._PosesBitmaps[4] = ImageManager.loadLMBSBattlers(this.bname() + "(jump)")};
-		   if (this._battler._lmbs_Jump[0]) {this._PosesBitmaps[5] = ImageManager.loadLMBSBattlers(this.bname() + "(fall)")};
-		   if (this._battler._lmbs_AirDash[0]) {this._PosesBitmaps[6] = ImageManager.loadLMBSBattlers(this.bname() + "(airdash)")};
+	       this._PosesBitmaps[2] = ImageManager.loadLMBSBattlers(this.bname() + "(Walk)");
+		   if (this._battler._lmbs_Dash[0]) {this._PosesBitmaps[3] = ImageManager.loadLMBSBattlers(this.bname() + "(Dash)")};
+		   if (this._battler._lmbs_Jump[0]) {this._PosesBitmaps[4] = ImageManager.loadLMBSBattlers(this.bname() + "(Jump)")};
+		   if (this._battler._lmbs_Jump[0]) {this._PosesBitmaps[5] = ImageManager.loadLMBSBattlers(this.bname() + "(Fall)")};
+		   if (this._battler._lmbs_AirDash[0]) {this._PosesBitmaps[6] = ImageManager.loadLMBSBattlers(this.bname() + "(Airdash)")};
 	   };
-	   if (this._battler._lmbs_Guard[0]) {this._PosesBitmaps[7] = ImageManager.loadLMBSBattlers(this.bname() + "(guard)")};
-	   this._PosesBitmaps[8] = ImageManager.loadLMBSBattlers(this.bname() + "(cast)");
-	   this._PosesBitmaps[9] = ImageManager.loadLMBSBattlers(this.bname() + "(damage)");
-	   this._PosesBitmaps[10] = ImageManager.loadLMBSBattlers(this.bname() + "(dead)");
-	   if (this._battler.isActor()) {this._PosesBitmaps[11] = ImageManager.loadLMBSBattlers(this.bname() + "(victory)")};
+	   if (this._battler._lmbs_Guard[0]) {this._PosesBitmaps[7] = ImageManager.loadLMBSBattlers(this.bname() + "(Guard)")};
+	   this._PosesBitmaps[8] = ImageManager.loadLMBSBattlers(this.bname() + "(Cast)");
+	   this._PosesBitmaps[9] = ImageManager.loadLMBSBattlers(this.bname() + "(Damage)");
+	   this._PosesBitmaps[10] = ImageManager.loadLMBSBattlers(this.bname() + "(Dead)");
+	   if (this._battler.isActor()) {this._PosesBitmaps[11] = ImageManager.loadLMBSBattlers(this.bname() + "(Victory)")};
    };
    this.forceBitmap();
    this.bitmap = this._PosesBitmaps[0];
