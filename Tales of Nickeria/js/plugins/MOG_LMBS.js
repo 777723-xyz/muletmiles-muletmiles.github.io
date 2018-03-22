@@ -655,7 +655,7 @@ Game_Battler.prototype.lmbsCacheBitmap = function(skill) {
 	if (note_data[0].toLowerCase() == "lmbs pose name"){			 
          var par = note_data[1].split(':');
 		 var pose = String(par[0]);
-		 var poseName = this.lmbsSpriteName() + "[" + pose + "]"
+		 var poseName = this.lmbsSpriteName() + "(" + pose + ")"
 		 ImageManager.loadLMBSBattlers(String(poseName));
     };
  	},this);
@@ -4743,19 +4743,19 @@ LmbsSpriteBattler.prototype.loadBitmaps = function() {
    this._PosesBitmaps[0] = ImageManager.loadLMBSBattlers(this.bname());
    this._PosesBitmaps[3] = ImageManager.loadLMBSBattlers(this.bname())
    if (this.bname() != "") {
-       this._PosesBitmaps[1] = ImageManager.loadLMBSBattlers(this.bname() + "\[idle\]");
+       this._PosesBitmaps[1] = ImageManager.loadLMBSBattlers(this.bname() + "(idle)");
 	   if (this._battler._lmbs_Movement) {
-	       this._PosesBitmaps[2] = ImageManager.loadLMBSBattlers(this.bname() + "[walk]");
-		   if (this._battler._lmbs_Dash[0]) {this._PosesBitmaps[3] = ImageManager.loadLMBSBattlers(this.bname() + "[dash]")};
-		   if (this._battler._lmbs_Jump[0]) {this._PosesBitmaps[4] = ImageManager.loadLMBSBattlers(this.bname() + "[jump]")};
-		   if (this._battler._lmbs_Jump[0]) {this._PosesBitmaps[5] = ImageManager.loadLMBSBattlers(this.bname() + "[fall]")};
-		   if (this._battler._lmbs_AirDash[0]) {this._PosesBitmaps[6] = ImageManager.loadLMBSBattlers(this.bname() + "[airdash]")};
+	       this._PosesBitmaps[2] = ImageManager.loadLMBSBattlers(this.bname() + "(walk)");
+		   if (this._battler._lmbs_Dash[0]) {this._PosesBitmaps[3] = ImageManager.loadLMBSBattlers(this.bname() + "(dash)")};
+		   if (this._battler._lmbs_Jump[0]) {this._PosesBitmaps[4] = ImageManager.loadLMBSBattlers(this.bname() + "(jump)")};
+		   if (this._battler._lmbs_Jump[0]) {this._PosesBitmaps[5] = ImageManager.loadLMBSBattlers(this.bname() + "(fall)")};
+		   if (this._battler._lmbs_AirDash[0]) {this._PosesBitmaps[6] = ImageManager.loadLMBSBattlers(this.bname() + "(airdash)")};
 	   };
-	   if (this._battler._lmbs_Guard[0]) {this._PosesBitmaps[7] = ImageManager.loadLMBSBattlers(this.bname() + "[guard]")};
-	   this._PosesBitmaps[8] = ImageManager.loadLMBSBattlers(this.bname() + "[cast]");
-	   this._PosesBitmaps[9] = ImageManager.loadLMBSBattlers(this.bname() + "[damage]");
-	   this._PosesBitmaps[10] = ImageManager.loadLMBSBattlers(this.bname() + "[dead]");
-	   if (this._battler.isActor()) {this._PosesBitmaps[11] = ImageManager.loadLMBSBattlers(this.bname() + "[victory]")};
+	   if (this._battler._lmbs_Guard[0]) {this._PosesBitmaps[7] = ImageManager.loadLMBSBattlers(this.bname() + "(guard)")};
+	   this._PosesBitmaps[8] = ImageManager.loadLMBSBattlers(this.bname() + "(cast)");
+	   this._PosesBitmaps[9] = ImageManager.loadLMBSBattlers(this.bname() + "(damage)");
+	   this._PosesBitmaps[10] = ImageManager.loadLMBSBattlers(this.bname() + "(dead)");
+	   if (this._battler.isActor()) {this._PosesBitmaps[11] = ImageManager.loadLMBSBattlers(this.bname() + "(victory)")};
    };
    this.forceBitmap();
    this.bitmap = this._PosesBitmaps[0];
@@ -4884,7 +4884,7 @@ LmbsSpriteBattler.prototype.skillID = function() {
 LmbsSpriteBattler.prototype.updatePoses = function() {
 	 if (this._battler.lmbsIsActing() && this.skillID() > 0) {
 		 if (!this._SkillBitmaps[this.skillID()]) {
-		     var pose = this.bname() + "[" + this._battler.lmbsPoseName() + "]"
+		     var pose = this.bname() + "(" + this._battler.lmbsPoseName() + ")"
 		     this._SkillBitmaps[this.skillID()] = ImageManager.loadLMBSBattlers(String(pose));
 		     };
 		 if (this._poseType != this.poseType() && this._SkillBitmaps[this.skillID()].isReady() && this._SkillBitmaps[this.skillID()].width) {this.refreshBitmap()};
