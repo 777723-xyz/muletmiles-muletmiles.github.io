@@ -399,7 +399,7 @@ ImageManager.loadLMBS = function(filename) {
 // * load LBSBatlers
 //==============================
 ImageManager.loadLMBSBattlers = function(filename) {
-    return this.loadBitmap('././img/lmbs/battlers/', filename, 0, false);
+    return this.loadBitmap('./img/lmbs/battlers/', filename, 0, true);
 };
 
 //==============================
@@ -4743,7 +4743,7 @@ LmbsSpriteBattler.prototype.loadBitmaps = function() {
    this._PosesBitmaps[0] = ImageManager.loadLMBSBattlers(this.bname());
    this._PosesBitmaps[3] = ImageManager.loadLMBSBattlers(this.bname())
    if (this.bname() != "") {
-       this._PosesBitmaps[1] = ImageManager.loadLMBSBattlers(String(this.bname() + "(Idle)"));
+       this._PosesBitmaps[1] = ImageManager.loadLMBSBattlers(this.bname() + "(Idle)");
 	   if (this._battler._lmbs_Movement) {
 	       this._PosesBitmaps[2] = ImageManager.loadLMBSBattlers(this.bname() + "(Walk)");
 		   if (this._battler._lmbs_Dash[0]) {this._PosesBitmaps[3] = ImageManager.loadLMBSBattlers(this.bname() + "(Dash)")};
