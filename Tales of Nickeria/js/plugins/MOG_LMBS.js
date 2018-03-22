@@ -399,7 +399,7 @@ ImageManager.loadLMBS = function(filename) {
 // * load LBSBatlers
 //==============================
 ImageManager.loadLMBSBattlers = function(filename) {
-    return this.loadBitmap('./img/lmbs/battlers/', filename, 1, true);
+    return this.loadBitmap('././img/lmbs/battlers/', filename, 0, false);
 };
 
 //==============================
