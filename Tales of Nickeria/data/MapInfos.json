@@ -1,15 +1,17 @@
 [
 null,
 {"id":1,"expanded":true,"name":"Westpoint Inn","order":2,"parentId":0,"scrollX":819,"scrollY":461},
-{"id":2,"expanded":false,"name":"StartingScene","order":9,"parentId":0,"scrollX":819,"scrollY":461},
+{"id":2,"expanded":false,"name":"StartingScene","order":11,"parentId":0,"scrollX":819,"scrollY":461},
 {"id":3,"expanded":true,"name":"MAP003","order":1,"parentId":0,"scrollX":819,"scrollY":461},
 {"id":4,"expanded":true,"name":"Fishing Village","order":3,"parentId":1,"scrollX":816,"scrollY":624},
-{"id":5,"expanded":true,"name":"Fortress","order":7,"parentId":1,"scrollX":1637,"scrollY":1078},
+{"id":5,"expanded":true,"name":"Fortress","order":8,"parentId":1,"scrollX":1637,"scrollY":1278},
 {"id":6,"expanded":false,"name":"Weapon Shop","order":4,"parentId":4,"scrollX":819,"scrollY":461},
 {"id":7,"expanded":false,"name":"House 1","order":5,"parentId":4,"scrollX":819,"scrollY":461},
 {"id":8,"expanded":false,"name":"House 2","order":6,"parentId":4,"scrollX":819,"scrollY":461},
-{"id":9,"expanded":false,"name":"Castle 3F","order":8,"parentId":5,"scrollX":1157,"scrollY":987},
-{"id":10,"expanded":true,"name":"Forest","order":10,"parentId":0,"scrollX":811,"scrollY":979},
-{"id":11,"expanded":false,"name":"World 3","order":11,"parentId":0,"scrollX":2685,"scrollY":1278},
-{"id":12,"expanded":false,"name":"Stone Cave","order":12,"parentId":0,"scrollX":1152,"scrollY":790}
+{"id":9,"expanded":false,"name":"Castle 3F","order":9,"parentId":5,"scrollX":1157,"scrollY":987},
+{"id":10,"expanded":true,"name":"Forest","order":14,"parentId":0,"scrollX":811,"scrollY":979},
+{"id":11,"expanded":false,"name":"World 3","order":12,"parentId":0,"scrollX":2686,"scrollY":1238},
+{"id":12,"expanded":false,"name":"Stone Cave","order":13,"parentId":0,"scrollX":811,"scrollY":987},
+{"id":13,"expanded":false,"name":"Fishing Village FIRE","order":7,"parentId":4,"scrollX":811,"scrollY":478},
+{"id":14,"expanded":true,"name":"Fortress but on Fire","order":10,"parentId":5,"scrollX":811,"scrollY":1567}
 ]
