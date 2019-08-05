@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/prism.css" data-noprefix />
+
+
+
+    <title>PBA Lvl8 Walkthrough</title>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      body {
+        padding-top: 5rem;
+      }
+      .starter-template {
+        padding: 3rem 1.5rem;
+        text-align: left;
+      }
+      .lead {
+        text-anchor: left;
+      }
+      .darkerCard {
+        background-color: #343a40;
+      }
+      .card {
+        background-color: #002b36;
+      }
+      .greenText {
+        color: #8ae234;
+        font-weight: 900;
+      }
+      .blueText{
+        color: #6f9acc;
+        font-weight: 900;
+      }
+      .grayText {
+        color: #839496;
+        font-weight: 900;
+      }
+    </style>
+
+  </head>
+
+  <body class>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Not a Blog</a>
+
+  </button>
+
+  
+</nav>
+
+<main role="main" class="container">
+
+  <div class="starter-template">
+    <h1>Practial Binary Analysis</h1>
+    <h2>Chapter 5 CTF Level 8 Walkthrough</h2>
+    <p class="lead">This is a walkthrough of how I personally solved "lvl8" of the CTF challenge for the Practical Binary Analysis book by Dennis Andriesse.</p>
+
+    <h3>Part 1: The ASCII File</h3>
+
+    <p>When you begin this level, you are given a file called "lvl8". As is recommended by the book, I thought that a good first move in this case would be to see what the "file" utility has to say: </p>
+
+    <div class="container card mb-3">
+      <div class="card-body">
+       <p><eh class="greenText">binary@binary-VirtualBox</eh><eh class="grayText">:</eh><eh class="blueText">~/code/chapter5</eh><eh class="grayText">$ file lvl8 <br/>
+          lvl8: ASCII text, with very long lines </eh>
+       </p>
+     </div>
+    </div>
+
+    <p>A bit interesting, my first thought was that it was base64 encoding or something. Just to be sure, I output the file to see exactly what I was dealing with. After using the "cat" command, I was greeted with a huuuuge amount of text - which was nowhere near looking like base64 encoding. Here are the first few lines: </p>
+
+     <div class="container card mb-3">
+      <div class="card-body">
+       <p><eh class="greenText">binary@binary-VirtualBox</eh><eh class="grayText">:</eh><eh class="blueText">~/code/chapter5</eh><eh class="grayText">head -n 3 lvl8 <br/>
+lOrem iPsuM doLOr SIT AmEt, conseCTETur adipIscing elit. maecenas eget augue sed leo suscipit ultrICiES sed blandit urna. sed ut risus vitAe Ligula semper scelerisque. fusce et UlTRices telluS, non commodo elit. nullA fACilisi. inteGer pharetra eu massa et ultrIces. nunc dignISsim nisl eu nulla ultricies venenatis. fusce tincidUnT NibH risuS, IN VulputaTe libero congue A. cuRabituR eST diam, lacinia vel placeRat Eget, seMpER nec enim.<br>
+<br>
+proin turpis metus, finibus in porttitor sed, tempor nec ante. nulla ornare volutpat mi, siT AMET VOlUTPAT NUNC. AENEAN VITAE JUSTO IN EX SUSCIPIT PHARETRA. NAM NULLA ERAT, CONGUE eGET QUAM NON, PLACErAT CONSEqUAT RISUs. PROIN QUIS ULTRICeS ODIO. SED AT PHAREtRA QUAM, INTERDUM CoNSECTETuR EROS. SED DOLOR LACUS, VEHICuLA ALIQUeT IACULIs SIT AMET, PRETIUM ViTAE NISI. pHASELLUs AT EX SAGITTIS, ACCUMSAN IPSuM AT, BLANdIT QUAM. MaURIS FERmENTUM VEsTIBULUM vARIUS. PElLENTESQUE CONVALlIS VITAE mI SIT AMEt EUISMOD. dONEC CONsECTETUR tELLUS FAuCIBUS ACcUMSAN EUISMOD. DONeC ULTRICiES RHONCuS ARCU, UT mOLESTIE sEM CONGUe EGET. NULlAM POSUERE LECTUS aC VENENAtIS SEMPEr. PROIN AT nIBH DOLOr.<br/>
+</eh>
+       </p>
+     </div>
+    </div>
+
+    <p>So, the file is just a huge dump of the infamous "lorem ispum" passage in latin. This is not really what I was expecting and doesn't look like any binary file format I'd heard of.</p>
+
+    <p>Of course, upon inspection something strange immediately jumped out at me: the capitalization of the letters. While the Latin words and lines were coherent in the language, the capitilization was all over the place... so I thought "the capitilizations must be hiding the flag!"</p><br/>
+
+    <p>To find out, I tried a bunch of  a "quick and dirty" c scripts on the various hunches I had: interpreting the capital letters as "1", looking for the key was at the beginning of the file, looking for 8 character latin words (i.e. a byte), etc.<p>
+
+    <p>After banging my head on the wall looking for the key long enough, I had a breakthrough: "what if the flag is not in this latin text, but rather this latin text represents ANOTHER file?" I then decided to interpret the whole file as another file, where a capital letter was a '1' and a lower case letter was a '0' (ignoring whitespace). The script I used is given below (sorry for the mess):</p>
+
+    <div class="container card mb-3">
+      <div class="card-body">
+       <pre><code class="language-clike grayText">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main(){
+  FILE *fileptr;
+  char *buffer;
+  long filelen;
+
+  fileptr = fopen("lvl8", "rb");  // Open the file in binary mode
+  fseek(fileptr, 0, SEEK_END);          // Jump to the end of the file
+  filelen = ftell(fileptr);             // Get the current byte offset in the file
+  rewind(fileptr);                      // Jump back to the beginning of the file
+
+  buffer = (char *)malloc((filelen+1)*sizeof(char)); // Enough memory for file + \0
+  fread(buffer, filelen, 1, fileptr); // Read in the entire file
+  fclose(fileptr); // Close the file
+
+  fileptr = fopen("decoded", "wb+");
+
+  //("buffer" has the bytes of the file)
+
+  unsigned char decodedByte = 0;
+  long bufferCounter = 0;
+
+  int bitIndex = 0;         //which index are we considering next
+
+  while(1){
+    unsigned char thisByte = *buffer;
+    buffer++;   //Get ready to go to next byte
+    bufferCounter++;
+
+
+    //        IGNORE non-letters
+    if(thisByte < 0x41 || (thisByte > 0x5a && thisByte < 0x61) || thisByte > 0x7a){
+      if(bufferCounter >= filelen + 1)
+        break;
+      continue;
+    }
+
+    //If the byte is uppercase (below 0x61), then it's a 1. Else, 0.
+
+    if(thisByte < 0x61){
+      decodedByte |= (1 << (7 - (bitIndex)));   //We initialize the byte as 0 so only or if needed
+    }
+
+    bitIndex++;
+
+    if(bitIndex == 8){  //Then we are ready to write a byte to the file
+      bitIndex = 0;
+      fwrite(&decodedByte, 1, 1, fileptr);
+      decodedByte = 0;
+    }
+    if(bufferCounter >= filelen + 1){
+      break;
+    }
+
+  }
+
+  return 0;
+}
+       </pre></code>
+     </div>
+    </div>
+
+  <p>Compiling and Running the above gives us what could be a file. Again I ran the file utility on the output:</p>
+
+  <div class="container card mb-3">
+      <div class="card-body">
+       <p><eh class="greenText">binary@binary-VirtualBox</eh><eh class="grayText">:</eh><eh class="blueText">~/code/chapter5</eh><eh class="grayText">$ file decoded <br/>
+          decoded: PC bitmap, Windows 3.x format, 300 x 300 x 24</eh>
+       </p>
+     </div>
+    </div>
+  
+
+  <p>"Aha!" I thought, "the key must be written out in the accompanying bitmap image!"</p>
+
+  <h3>Part 2: The Elf</h3>
+
+  <p>I quickly displayed the image, content to be ready to ready out the flag and be done. However, this was what I was greeted with:</p>
+
+  <p><img src="./a.bmp"></p>
+
+  <p>A bit confused, I was unsure of what to make of this character. "Is this the flag?"</p>
+
+  <p>After many failed attempts pumping guesses such as "ElfMegaMan", "WillFerrell", and "ElfThatOneMovie" into the oracle, I decided to take a step back and think more about this image I was greeted with, particularly looking at things that I found odd (just like with the Latin text).</p>
+
+  <p>The first thing that struck me as odd was just how BIG the file was: while it looked to be a simple pixel-art image, the dimensions were 300x300. After some failed attempts at condensing the file (hoping for something magical to happen), I took an even closer look and was granted an "aha!" moment: looking through the bitmap parameters (just using online tools), there were over 10 different colors represented in the file, but only ~6 or so that I could see. The slightly different colors must be hiding something!</p>
+
+  <p>After closer inspection on the colors, I grouped colors into "normal" and "not normal" colors, basing the "normal" colors off of those found at the end of the file. By comparing, I noticed that the "not normal" colors were the same as their counterparts, but had the lowest bit set to 0.</p>
+
+  <p>"Aha!" I thought to myself. All I needed was to take out the BMP header on this file...</p>
+
+  <div class="container card mb-3">
+      <div class="card-body">
+       <p><eh class="greenText">binary@binary-VirtualBox</eh><eh class="grayText">:</eh><eh class="blueText">~/code/chapter5</eh><eh class="grayText">$ dd skip=54 bs=1 if=decoded of=lvl8_pic<br/>
+270002+0 records in<br/>
+270002+0 records out<br/>
+270002 bytes (270 kB, 264 KiB) copied, 0,359506 s, 751 kB/s
+</eh>
+       </p>
+     </div>
+    </div>
+
+  <p>And then modify my earlier script to write out a NEW decoded file ("which must be the flag!" I thought).
+
+  <div class="container card mb-3">
+      <div class="card-body">
+       <pre><code class="language-clike grayText">
+#include &lt;stdio.h&gt;
+#include &lt;stdlib.h&gt;
+
+int main(){
+  FILE *fileptr;
+  char *buffer;
+  long filelen;
+
+  fileptr = fopen("lvl8_pic", "rb");  // Open the file in binary mode
+  fseek(fileptr, 0, SEEK_END);          // Jump to the end of the file
+  filelen = ftell(fileptr);             // Get the current byte offset in the file
+  rewind(fileptr);                      // Jump back to the beginning of the file
+
+  buffer = (char *)malloc((filelen+1)*sizeof(char)); // Enough memory for file + \0
+  fread(buffer, filelen, 1, fileptr); // Read in the entire file
+  fclose(fileptr); // Close the file
+
+  fileptr = fopen("lvl8_elf", "wb+"); //By this time I knew the output was an ELF executable (spoiler alert)
+
+  //("buffer" has the bytes of the file)
+
+
+  //Try 3 - writing as a file
+  unsigned char decodedByte = 0;
+  long bufferCounter = 0;
+
+  int bitIndex = 0;         //which index are we considering next
+
+  while(1){
+    unsigned char thisByte = *buffer;
+    buffer++;  
+    bufferCounter++;
+
+    if((thisByte & 1) == 1){
+      //key[keyIndex] |= (1 << (31 - (bitIndex % 32))); //Try 1
+      decodedByte |= (1 << (7 - (bitIndex)));   //Try 3
+    }
+
+    bitIndex++;
+
+    if(bitIndex == 8){
+      bitIndex = 0;
+      fwrite(&decodedByte, 1, 1, fileptr);
+      decodedByte = 0;
+    }
+
+    if(bufferCounter >= filelen + 1){
+      break;
+    }
+  }
+
+  return 0;
+}
+
+       </pre></code>
+     </div>
+    </div>
+
+    <p>This gave us yet ANOTHER file, which I hoped dearly would be the flag. Looking at it with the "file" utility</p>
+
+    <div class="container card mb-3">
+      <div class="card-body">
+       <p><eh class="greenText">binary@binary-VirtualBox</eh><eh class="grayText">:</eh><eh class="blueText">~/code/chapter5</eh><eh class="grayText">$ file lvl8_elf<br/>
+lvl8_elf: ELF 64-bit LSB executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, for GNU/Linux 2.6.32, BuildID[sha1]=3f43c1bc1bc2d1dccc12d2fbb1cb83347e8cb3b4, not stripped
+</eh>
+       </p>
+     </div>
+    </div>
+
+    <p>Aha! A good-ol' ELF executable! And it's not even stripped! This must just output the flag and we're done, right? Right? RIGHT!?</p>
+
+    <h3>Part3: Wrong</h3>
+
+    <p>Alas, running the program yielded absolutely nothing. Running "ltrace", "strace", and "string" similarly gave no really helpful indications (except that there was a function named "main" that seemed to be the code base).</p>
+
+    <p>Given that the binary was not stripped, it seemed natural to use the next tool in our disposal: objdump. With good old-fashioned slowly looking at every instruction, I mapped out what all of the instructions were doing:</p>
+
+    <div class="container card mb-3">
+      <div class="card-body">
+       <pre><eh class="grayText">00000000004005d6 <main>:
+  4005d6: 55                    push   %rbp
+  4005d7: 48 89 e5              mov    %rsp,%rbp
+  4005da: 48 83 ec 30           sub    $0x30,%rsp       //Allocate Stack Space.
+  4005de: 89 7d dc              mov    %edi,-0x24(%rbp) //Places "1" at this place on the stack
+  4005e1: 48 89 75 d0           mov    %rsi,-0x30(%rbp) //Places a RAM location (0x7fffffffe038) on the stack (?)
+  4005e5: be 00 10 00 00        mov    $0x1000,%esi   
+  4005ea: bf 00 10 00 00        mov    $0x1000,%edi
+  4005ef: e8 bc fe ff ff        callq  4004b0 <memalign@plt>    //Allocates 0x1000 (4096) bytes, pointer to it in eax
+                                                                //(essentially a malloc) 
+  4005f4: 48 89 45 f0           mov    %rax,-0x10(%rbp)         //Put the pointer to the malloc location on the stack
+                                                                //(Consistently 0x603000)
+  4005f8: 48 8b 45 f0           mov    -0x10(%rbp),%rax             //? Redundant operation???
+  4005fc: ba 03 00 00 00        mov    $0x3,%edx                //edx = 3
+  400601: be 00 10 00 00        mov    $0x1000,%esi             //esi = 4096 bytes
+  400606: 48 89 c7              mov    %rax,%rdi                //rdi = 0x603000
+  400609: e8 b2 fe ff ff        callq  4004c0 <mprotect@plt>      //for that 0x603000 memory region (of 4096 bytes), sets its protection so that it may be WRITTEN to as well as EXECUTED
+
+
+  40060e: 8b 05 a0 0a 20 00     mov    0x200aa0(%rip),%eax        //eax = flag_bin_len (which seems to be 83) # 6010b4 <flag_bin_len>
+  400614: 89 c2                 mov    %eax,%edx                  //edx = eax (83)
+  400616: 48 8b 45 f0           mov    -0x10(%rbp),%rax           //rax = 0x603000 (writable/executable memory)
+  40061a: be 60 10 60 00        mov    $0x601060,%esi             //esi = 0x601060 (&flag_bin)
+  40061f: 48 89 c7              mov    %rax,%rdi                  //rdi = 0x603000
+  400622: e8 79 fe ff ff        callq  4004a0 <memcpy@plt>        //Copys 83 bytes from 0x601060 to 0x603000
+
+
+
+  400627: 8b 05 87 0a 20 00     mov    0x200a87(%rip),%eax        //eax = flag_bin_len (83) # 6010b4 <flag_bin_len>
+  40062d: 89 c2                 mov    %eax,%edx                  //edx = flag_bin_len
+  40062f: 48 8b 45 f0           mov    -0x10(%rbp),%rax           //rax = 0x603000
+  400633: 48 01 d0              add    %rdx,%rax                  //rax += flag_bin_len (eax = 0x603053)
+  400636: c6 00 c3              movb   $0xc3,(%rax)               //*0x60353 = 0xc3   (which as retq instruction!)
+  400639: c7 45 ec 00 00 00 00  movl   $0x0,-0x14(%rbp)           //put 0 on the stack //stack_var14 = 0;
+  400640: eb 26                 jmp    400668 <main+0x92>         
+
+                                //while(stack_var14 < flag_bin_len){
+
+                                      //So, while loop just xors all of the elements in the array by 0xffffffcc
+
+  400642: 8b 45 ec              mov    -0x14(%rbp),%eax      
+  400645: 48 63 d0              movslq %eax,%rdx                  //edx = stack_var14
+  400648: 48 8b 45 f0           mov    -0x10(%rbp),%rax           //eax = 0x603000
+  40064c: 48 01 d0              add    %rdx,%rax                  //eax += stack_var14
+  40064f: 8b 55 ec              mov    -0x14(%rbp),%edx           
+  400652: 48 63 ca              movslq %edx,%rcx                  //rcx = stack_var14
+  400655: 48 8b 55 f0           mov    -0x10(%rbp),%rdx           //edx = 0x603000
+  400659: 48 01 ca              add    %rcx,%rdx                  //edx += stack_var14
+  40065c: 0f b6 12              movzbl (%rdx),%edx                //edx = *edx  (so, *(0x603000 + stack_var14))
+  40065f: 83 f2 cc              xor    $0xffffffcc,%edx           //edx ^= 0xffffffcc  (undoing a previous encryption?)
+  400662: 88 10                 mov    %dl,(%rax)                 //*(0x603000 + 14) = last 8 bits of edx.
+
+  400664: 83 45 ec 01           addl   $0x1,-0x14(%rbp)           //stack_var14 += 1
+
+
+  400668: 8b 55 ec              mov    -0x14(%rbp),%edx           //edx = stack_var14
+  40066b: 8b 05 43 0a 20 00     mov    0x200a43(%rip),%eax        //eax = flag_bin_len # 6010b4 <flag_bin_len>
+  400671: 39 c2                 cmp    %eax,%edx
+  400673: 72 cd                 jb     400642 <main+0x6c>         //if(stack_var14 >= flag_bin) break
+
+                                //} 
+
+  400675: 48 8b 45 f0           mov    -0x10(%rbp),%rax           //rax = 0x603000
+  400679: ba 04 00 00 00        mov    $0x4,%edx                  //edx = 0x4     
+  40067e: be 00 10 00 00        mov    $0x1000,%esi               //esi = 0x1000 (4096)
+  400683: 48 89 c7              mov    %rax,%rdi                  //edi = rax
+  400686: e8 35 fe ff ff        callq  4004c0 <mprotect@plt>      //Code at 0x603000 can now be READ but NOT WRITTEN OR EXECUTED
+
+
+
+  40068b: 48 8b 45 f0           mov    -0x10(%rbp),%rax           //rax = 0x603000    
+  40068f: 8b 15 1f 0a 20 00     mov    0x200a1f(%rip),%edx        //edx = flag_bin_len (83) # 6010b4 <flag_bin_len>
+  400695: 89 d2                 mov    %edx,%edx                  //?
+  400697: 48 01 d0              add    %rdx,%rax                  //rax = 0x603000 + flag_bin len
+                                                                  //(rax = 0x603053)
+  40069a: 48 89 45 f8           mov    %rax,-0x8(%rbp)            //stack_var8 = 0x603053
+  40069e: 48 8b 55 f8           mov    -0x8(%rbp),%rdx            //rdx = stack_var8  
+  4006a2: b8 00 00 00 00        mov    $0x0,%eax                  //eax = 0
+  4006a7: ff d2                 callq  *%rdx                      //call 0x603053
+
+
+  4006a9: b8 00 00 00 00        mov    $0x0,%eax
+  4006ae: c9                    leaveq 
+  4006af: c3                    retq   </eh>
+       </pre>
+     </div>
+    </div>
+
+  <p>Stepping through it, it appears that the first block (up until 0x4005ef) was simply allocating memory. Great, no problem there.</p>
+
+  <p>The next block was important - it was a call to "mprotect" that <eh class="grayText">labelled the code for execution</eh>. So this allocated memory will likely have runnable code!</p>
+
+  <p>Then, the binary copies some values from memory into this section that was labelled for running. Notably, it also appends a "retq" command to the end of the memory block (which further leads us to believe that this should be a code block that should be run)!</p>
+
+  <p>However, the values that are placed there from the memcpy above are garbage instructions. So, there is a "while looop" that takes each of these instructions and xors them with "cc". As it turns out, this leads to valid instructions (you can verify with gdb).</p>
+
+  <p>After this while loop (looking at 0x400675 now), something kind of strange happens... there's another call to mprotect, but this time it DISABLES the execution flag. Huh? Didn't we just do all that work to make valid instructions there? </p>
+
+  <p>More weirdness occurs in the next block: The end goal is to "call" code that's specified by the register "rdx". So we'd expect the value to be the start of the memory region we just worked on, right? However, instead it is loaded with simply the "retq" location - skipping over all that code!</p>
+
+  <p>-----</p>
+
+  <p>At a loss for why those two "weird" instructions existed, I edited the binary to do what I thought it should do (i.e., not give up execution privilege for the section of memory and jump to the start, not end, of this section of memory). The changes are highlighted in green below:</p>
+
+  <div class="container card mb-3">
+      <div class="card-body">
+       <pre><eh class="grayText">00000000004005d6 <main>:
+  4005d6: 55                    push   %rbp
+  4005d7: 48 89 e5              mov    %rsp,%rbp
+  4005da: 48 83 ec 30           sub    $0x30,%rsp       //Allocate Stack Space.
+  4005de: 89 7d dc              mov    %edi,-0x24(%rbp) //Places "1" at this place on the stack
+  4005e1: 48 89 75 d0           mov    %rsi,-0x30(%rbp) //Places a RAM location (0x7fffffffe038) on the stack (?)
+  4005e5: be 00 10 00 00        mov    $0x1000,%esi   
+  4005ea: bf 00 10 00 00        mov    $0x1000,%edi
+  4005ef: e8 bc fe ff ff        callq  4004b0 <memalign@plt>    //Allocates 0x1000 (4096) bytes, pointer to it in eax
+                                                                //(essentially a malloc) 
+  4005f4: 48 89 45 f0           mov    %rax,-0x10(%rbp)         //Put the pointer to the malloc location on the stack
+                                                                //(Consistently 0x603000)
+  4005f8: 48 8b 45 f0           mov    -0x10(%rbp),%rax             //? Redundant operation???
+  4005fc: ba 03 00 00 00        mov    $0x3,%edx                //edx = 3
+  400601: be 00 10 00 00        mov    $0x1000,%esi             //esi = 4096 bytes
+  400606: 48 89 c7              mov    %rax,%rdi                //rdi = 0x603000
+  400609: e8 b2 fe ff ff        callq  4004c0 <mprotect@plt>      //for that 0x603000 memory region (of 4096 bytes), sets its protection so that it may be WRITTEN to as well as EXECUTED
+
+
+  40060e: 8b 05 a0 0a 20 00     mov    0x200aa0(%rip),%eax        //eax = flag_bin_len (which seems to be 83) # 6010b4 <flag_bin_len>
+  400614: 89 c2                 mov    %eax,%edx                  //edx = eax (83)
+  400616: 48 8b 45 f0           mov    -0x10(%rbp),%rax           //rax = 0x603000 (writable/executable memory)
+  40061a: be 60 10 60 00        mov    $0x601060,%esi             //esi = 0x601060 (&flag_bin)
+  40061f: 48 89 c7              mov    %rax,%rdi                  //rdi = 0x603000
+  400622: e8 79 fe ff ff        callq  4004a0 <memcpy@plt>        //Copys 83 bytes from 0x601060 to 0x603000
+
+
+
+  400627: 8b 05 87 0a 20 00     mov    0x200a87(%rip),%eax        //eax = flag_bin_len (83) # 6010b4 <flag_bin_len>
+  40062d: 89 c2                 mov    %eax,%edx                  //edx = flag_bin_len
+  40062f: 48 8b 45 f0           mov    -0x10(%rbp),%rax           //rax = 0x603000
+  400633: 48 01 d0              add    %rdx,%rax                  //rax += flag_bin_len (eax = 0x603053)
+  400636: c6 00 c3              movb   $0xc3,(%rax)               //*0x60353 = 0xc3   (which as retq instruction!)
+  400639: c7 45 ec 00 00 00 00  movl   $0x0,-0x14(%rbp)           //put 0 on the stack //stack_var14 = 0;
+  400640: eb 26                 jmp    400668 <main+0x92>         
+
+                                //while(stack_var14 < flag_bin_len){
+
+                                      //So, while loop just xors all of the elements in the array by 0xffffffcc
+
+  400642: 8b 45 ec              mov    -0x14(%rbp),%eax      
+  400645: 48 63 d0              movslq %eax,%rdx                  //edx = stack_var14
+  400648: 48 8b 45 f0           mov    -0x10(%rbp),%rax           //eax = 0x603000
+  40064c: 48 01 d0              add    %rdx,%rax                  //eax += stack_var14
+  40064f: 8b 55 ec              mov    -0x14(%rbp),%edx           
+  400652: 48 63 ca              movslq %edx,%rcx                  //rcx = stack_var14
+  400655: 48 8b 55 f0           mov    -0x10(%rbp),%rdx           //edx = 0x603000
+  400659: 48 01 ca              add    %rcx,%rdx                  //edx += stack_var14
+  40065c: 0f b6 12              movzbl (%rdx),%edx                //edx = *edx  (so, *(0x603000 + stack_var14))
+  40065f: 83 f2 cc              xor    $0xffffffcc,%edx           //edx ^= 0xffffffcc  (undoing a previous encryption?)
+  400662: 88 10                 mov    %dl,(%rax)                 //*(0x603000 + 14) = last 8 bits of edx.
+
+  400664: 83 45 ec 01           addl   $0x1,-0x14(%rbp)           //stack_var14 += 1
+
+
+  400668: 8b 55 ec              mov    -0x14(%rbp),%edx           //edx = stack_var14
+  40066b: 8b 05 43 0a 20 00     mov    0x200a43(%rip),%eax        //eax = flag_bin_len # 6010b4 <flag_bin_len>
+  400671: 39 c2                 cmp    %eax,%edx
+  400673: 72 cd                 jb     400642 <main+0x6c>         //if(stack_var14 >= flag_bin) break
+
+                                //} 
+
+  400675: 48 8b 45 f0           mov    -0x10(%rbp),%rax           //rax = 0x603000
+  400679: ba <eh class="greenText">07</eh> 00 00 00        mov    <eh class="greenText">$0x7</eh>,%edx                  //edx = <eh class="greenText">0x7</eh>     
+  40067e: be 00 10 00 00        mov    $0x1000,%esi               //esi = 0x1000 (4096)
+  400683: 48 89 c7              mov    %rax,%rdi                  //edi = rax
+  400686: e8 35 fe ff ff        callq  4004c0 <mprotect@plt>      //Code at 0x603000 can now be READ but NOT WRITTEN OR EXECUTED
+
+
+
+  40068b: 48 8b 45 f0           mov    -0x10(%rbp),%rax           //rax = 0x603000    
+  40068f: 8b 15 1f 0a 20 00     mov    0x200a1f(%rip),%edx        //edx = flag_bin_len (83) # 6010b4 <flag_bin_len>
+  400695: 89 d2                 mov    %edx,%edx                  //?
+  400697: 48 01 d0              add    %rdx,%rax                  //rax = 0x603000 + flag_bin len
+                                                                  //(rax = 0x603053)
+  40069a: 48 89 45 f8           mov    %rax,-0x8(%rbp)            //stack_var8 = 0x603053
+  40069e: 48 8b 55 <eh class="greenText">f0</eh>           mov    <eh class="greenText">-0x10</eh>(%rbp),%rdx            //rdx = <eh class="greenText">0x603000</eh> 
+  4006a2: b8 00 00 00 00        mov    $0x0,%eax                  //eax = 0
+  4006a7: ff d2                 callq  *%rdx                      //call 0x603053
+
+
+  4006a9: b8 00 00 00 00        mov    $0x0,%eax
+  4006ae: c9                    leaveq 
+  4006af: c3                    retq   </eh>
+       </pre>
+     </div>
+    </div>
+
+  <p>Then, I ran the modified program...</p>
+
+  <div class="container card mb-3">
+      <div class="card-body">
+       <p><eh class="greenText">binary@binary-VirtualBox</eh><eh class="grayText">:</eh><eh class="blueText">~/code/chapter5</eh><eh class="grayText">$ ./lvl8_elf<br/>
+2235a6b2123404469f4abce71b1dd29f �A�
+</eh>
+       </p>
+     </div>
+    </div>
+
+  <p>Could it be? Ignoring the weird characters that were at the end of the sequence, I put the flag into the oracle...</p>
+
+   <div class="container card mb-3">
+      <div class="card-body">
+       <p><eh class="greenText">binary@binary-VirtualBox</eh><eh class="grayText">:</eh><eh class="blueText">~/code/chapter5</eh><eh class="grayText">$ ./oracle 2235a6b2123404469f4abce71b1dd29f<br/>
++~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+<br/>
+| Level 8 completed, unlocked reward.tar.gz |<br/>
++~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~+<br/>
+Run oracle with -h to show a hint<br/>
+<eh class="greenText">binary@binary-VirtualBox</eh><eh class="grayText">:</eh><eh class="blueText">~/code/chapter5</eh><eh class="grayText">$ ./oracle 2235a6b2123404469f4abce71b1dd29f -h<br/>
+Congratulations, you've completed all levels!<br/>
+</eh>
+       </p>
+     </div>
+    </div>
+
+  <p>Wow! It's finally done! This took way too long lol.</p>
+
+  <p>Hope this guide helped. As to what is in "reward.tar.gz"... you'll have to find out for yourself!</p>
+
+  <p>Thanks,</p>
+
+  <p>Miles</p>
+
+  </div>
+</main><!-- /.container -->
+  
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./prism.js"></script>
+  </body>
+</html>
