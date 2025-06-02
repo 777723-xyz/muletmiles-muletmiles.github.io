@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <body>
+    <img src="may13.png" alt="Description">
+    TODO Doing some line work hehe (put screenshot from macbook here)
+
+	<img src="may13_2.png" alt="Description">
+	TODO Fun Shot (see today from macbook)
+
+
+  </body>
+</html>
